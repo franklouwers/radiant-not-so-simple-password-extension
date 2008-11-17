@@ -24,8 +24,10 @@ class SimplePasswordExtension < Radiant::Extension
   url "git://github.com/yoon/radiant-simple-password-extension.git"
 
   def activate
+	admin.tabs.add "Wachtwoorden", "/admin/passwords" 
     SiteController.send :include, SimplePassword::SiteControllerExt
-    SimplePasswordPage
+    PassPage
+	ProtectedPage
   end
   
   def deactivate
