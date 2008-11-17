@@ -1,0 +1,7 @@
+p = Page.find_by_slug("__passwords")
+
+YAML::load(p.parts.find_by_name("config").content)
+
+issues: 
+-------
+- spaties! (javascript validation bij saven?)
