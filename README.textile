@@ -1,4 +1,4 @@
-h1.Simple Password Extension
+h1. Simple Password Extension
 
 A "Simple Password Page" page protects contents with HTTP Basic 
 Authentication. The user name, password, and realm are set up in
