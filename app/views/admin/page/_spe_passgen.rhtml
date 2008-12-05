@@ -1,0 +1,29 @@
+<% if @page.class_name == 'PassPage' %>
+
+<script language="javascript" type="text/javascript">
+function randomString() {
+	var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+	var string_length = 8;
+	var randomstring = '';
+	var username = '';
+	for (var i=0; i<string_length; i++) {
+		var rnum = Math.floor(Math.random() * chars.length);
+		randomstring += chars.substring(rnum,rnum+1);
+	}
+	while (username.empty()) {
+		var username = prompt ("Geef een nieuwe gebruikersnaam","");
+	}
+	$$('form textarea#part_0_content').first().insert("\n" + username + ": " + randomstring);
+	
+	
+}
+</script>
+
+<div class="row">
+	<p>
+<input type="button" value="Nieuwe gebruiker" onClick="randomString();">
+	</p>
+</div>
+
+
+<% end %>
