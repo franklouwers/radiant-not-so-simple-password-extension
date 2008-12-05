@@ -11,7 +11,7 @@ usernames and passwords in this pseudo YAML like format:
        john: secret
        mary: lamb
        foo: bar
-<pre><code>
+</pre></code>
 
    
 I've also added a "New User" button on that page. It asks you for

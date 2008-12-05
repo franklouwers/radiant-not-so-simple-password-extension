@@ -1,2 +1,2 @@
-- validatie (correcte yaml)
-- javascript random generator
+- make sure there can only be one PassPage page
+- do some kind of validation to make sure a user is only entered once
