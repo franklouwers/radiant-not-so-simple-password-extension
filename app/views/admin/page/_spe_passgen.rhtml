@@ -14,7 +14,7 @@ function randomString() {
 		var username = prompt ("Geef een nieuwe gebruikersnaam","");
 	}
 	alert("Wachtwoord voor " + username + " is: " + randomstring + "\nVergeet niet deze pagina op te slaan!");
-	$$('form textarea#part_0_content').first().insert("\n" + username + ": " + randomstring);
+	$$('form textarea#part_0_content').first().value += "\n" + username + ": " + randomstring;
 	
 	
 }
