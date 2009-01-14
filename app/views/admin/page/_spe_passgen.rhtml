@@ -15,9 +15,10 @@ function randomString() {
 	}
 	alert("Wachtwoord voor " + username + " is: " + randomstring + "\nVergeet niet deze pagina op te slaan!");
 	$$('form textarea#part_0_content').first().value += "\n" + username + ": " + randomstring;
-	
-	
 }
+
+$$('form textarea#part_0_content').first().disabled = true;
+
 </script>
 
 <div class="row">
